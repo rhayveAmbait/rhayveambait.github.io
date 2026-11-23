@@ -4,40 +4,94 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kaselca Apps</title>
-<meta name="description" content="Kaselca Apps makes fun, free games for Android, like Twistyard: 13 twisty puzzles in one app.">
-<link rel="icon" href="data:image/png;base64,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">
+<meta name="description" content="Kaselca Apps makes fun, free games for Android: Twistyard, 13 twisty puzzles in one app, and Quillblade, a doodle action adventure.">
+<meta name="theme-color" content="#2a1878">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232a1878'/%3E%3Crect x='8' y='8' width='14' height='14' rx='4' fill='%23ffffff'/%3E%3Crect x='25' y='8' width='14' height='14' rx='4' fill='%23ffd23f'/%3E%3Crect x='42' y='8' width='14' height='14' rx='4' fill='%23ff3b4f'/%3E%3Crect x='8' y='25' width='14' height='14' rx='4' fill='%232bd27f'/%3E%3Crect x='25' y='25' width='14' height='14' rx='4' fill='%233d7dff'/%3E%3Crect x='42' y='25' width='14' height='14' rx='4' fill='%23ff8a1f'/%3E%3Crect x='8' y='42' width='14' height='14' rx='4' fill='%23ff3b4f'/%3E%3Crect x='25' y='42' width='14' height='14' rx='4' fill='%23ffffff'/%3E%3Crect x='42' y='42' width='14' height='14' rx='4' fill='%23ffd23f'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
 <style>
+  :root{
+    --ink:#1b0f52; --sun:#ffd23f; --sun-deep:#c99a00; --white:#fff;
+    --glass:rgba(255,255,255,.09); --glass-2:rgba(255,255,255,.15); --line:rgba(255,255,255,.16);
+    --text:#fff; --soft:rgba(255,255,255,.82); --mute:rgba(255,255,255,.62);
+    --head:"Baloo 2",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    --body:Nunito,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    color-scheme:dark;
+  }
   *{box-sizing:border-box;margin:0}
-  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#fff;min-height:100vh;
-    background:radial-gradient(120% 70% at 15% 0%,#7b5cff 0%,transparent 60%),linear-gradient(160deg,#3a1c8e 0%,#2232b8 100%);
-    background-attachment:fixed;line-height:1.55}
+  html{background:#2a1878}
+  body{font-family:var(--body);color:var(--text);min-height:100vh;line-height:1.6;overflow-x:hidden;position:relative}
+  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background:
+      radial-gradient(60% 45% at 10% 0%,rgba(123,92,255,.95) 0%,transparent 70%),
+      radial-gradient(50% 40% at 100% 30%,rgba(255,59,79,.28) 0%,transparent 70%),
+      radial-gradient(60% 50% at 0% 100%,rgba(43,210,127,.18) 0%,transparent 70%),
+      linear-gradient(160deg,#3a1c8e 0%,#2a2aa8 55%,#1c2a9e 100%)}
   a{color:inherit}
-  .wrap{max-width:880px;margin:0 auto;padding:56px 22px 40px}
-  header{text-align:center;margin-bottom:44px}
-  .logo{display:inline-grid;grid-template-columns:repeat(3,14px);gap:4px;padding:10px;border-radius:14px;background:rgba(0,0,0,.25);margin-bottom:18px}
-  .logo i{width:14px;height:14px;border-radius:4px;display:block}
-  h1{font-size:clamp(34px,7vw,52px);font-weight:800;letter-spacing:-.02em}
-  .tag{opacity:.85;font-size:18px;margin-top:6px}
-  .card{display:flex;gap:22px;align-items:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);
-    border-radius:26px;padding:24px;box-shadow:0 18px 50px rgba(10,4,50,.35);backdrop-filter:blur(6px)}
-  .card img{width:112px;height:112px;border-radius:26px;flex:none;box-shadow:0 8px 22px rgba(0,0,0,.35)}
-  .card h2{font-size:26px;font-weight:800}
-  .card p{opacity:.88;margin:6px 0 14px}
-  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
-  .chips span{font-size:13px;font-weight:700;padding:5px 11px;border-radius:999px;background:rgba(255,255,255,.14)}
-  .btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:800;color:#2d1680;background:#ffd23f;
-    padding:12px 22px;border-radius:16px;box-shadow:0 5px 0 #c99a00;transition:transform .1s,box-shadow .1s}
-  .btn:hover{transform:translateY(-1px)}
-  .btn:active{transform:translateY(4px);box-shadow:0 1px 0 #c99a00}
-  .sec{margin-top:40px}
-  .sec h3{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#ffd23f;margin-bottom:12px}
-  .links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-  .links a{display:block;text-decoration:none;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.12);font-weight:700}
-  .links a:hover{background:rgba(255,255,255,.16)}
-  .links small{display:block;font-weight:500;opacity:.75;margin-top:2px}
-  footer{text-align:center;opacity:.7;font-size:14px;margin-top:56px}
-  @media (max-width:560px){.card{flex-direction:column;text-align:center}.chips{justify-content:center}}
+  .wrap{max-width:1040px;margin:0 auto;padding:64px max(20px,env(safe-area-inset-right)) 40px max(20px,env(safe-area-inset-left))}
+
+  /* hero */
+  header{text-align:center;margin-bottom:56px}
+  .logo{display:inline-grid;grid-template-columns:repeat(3,16px);gap:5px;padding:12px;border-radius:18px;
+    background:rgba(0,0,0,.22);box-shadow:inset 0 0 0 1px var(--line),0 14px 30px rgba(10,4,50,.35);margin-bottom:20px;transform:rotate(-6deg)}
+  .logo i{width:16px;height:16px;border-radius:5px;display:block;box-shadow:inset 0 -3px 0 rgba(0,0,0,.18)}
+  h1{font-family:var(--head);font-size:clamp(40px,8vw,64px);font-weight:800;line-height:1;letter-spacing:-.01em}
+  .tag{color:var(--soft);font-size:clamp(17px,2.4vw,20px);margin-top:12px;font-weight:700}
+  .tag b{color:var(--sun)}
+
+  /* games */
+  .label{font-family:var(--head);font-size:15px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--sun);
+    display:flex;align-items:center;gap:12px;margin-bottom:18px}
+  .label::after{content:"";flex:1;height:1px;background:var(--line)}
+  .games{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:22px}
+  .game{position:relative;display:flex;flex-direction:column;gap:16px;padding:26px;border-radius:28px;overflow:hidden;
+    background:linear-gradient(180deg,var(--glass-2),var(--glass));border:1px solid var(--line);
+    box-shadow:0 22px 50px rgba(10,4,50,.35);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+    transition:transform .25s ease,box-shadow .25s ease}
+  .game::before{content:"";position:absolute;inset:0 0 auto;height:5px;background:var(--stripe)}
+  .game::after{content:"";position:absolute;width:260px;height:260px;right:-90px;top:-110px;border-radius:50%;background:var(--glow);filter:blur(40px);opacity:.55;pointer-events:none}
+  .game:hover{transform:translateY(-4px);box-shadow:0 30px 60px rgba(10,4,50,.45)}
+  .twisty{--stripe:linear-gradient(90deg,#ff3b4f 0 16.6%,#ffd23f 0 33.3%,#2bd27f 0 50%,#3d7dff 0 66.6%,#ff8a1f 0 83.3%,#fff 0);--glow:#3d7dff}
+  .quill{--stripe:repeating-linear-gradient(90deg,#f7efd9 0 22px,#7c3cff 22px 26px);--glow:#a259ff}
+  .top{display:flex;gap:18px;align-items:center;position:relative;z-index:1}
+  .top img{width:96px;height:96px;border-radius:24px;flex:none;box-shadow:0 10px 24px rgba(0,0,0,.4),0 0 0 1px rgba(255,255,255,.18)}
+  .kind{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+  .game h2{font-family:var(--head);font-size:30px;font-weight:800;line-height:1.1}
+  .game p{color:var(--soft);position:relative;z-index:1}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;position:relative;z-index:1}
+  .chips span{font-size:13px;font-weight:800;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.1)}
+  .foot{margin-top:auto;display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;position:relative;z-index:1;padding-top:4px}
+  .btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:16px;color:var(--ink);background:var(--sun);
+    padding:13px 22px;border-radius:16px;box-shadow:0 5px 0 var(--sun-deep);transition:transform .1s,box-shadow .1s,filter .15s}
+  .btn svg{width:18px;height:18px;fill:currentColor}
+  .btn:hover{filter:brightness(1.06);transform:translateY(-1px);box-shadow:0 6px 0 var(--sun-deep)}
+  .btn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--sun-deep)}
+  .btn:focus-visible,.links a:focus-visible{outline:3px solid #fff;outline-offset:3px}
+  .free{font-size:14px;font-weight:700;color:var(--mute)}
+
+  /* about + legal */
+  .sec{margin-top:56px}
+  .about{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:14px}
+  .about div{padding:18px 20px;border-radius:20px;background:var(--glass);border:1px solid var(--line)}
+  .about b{display:block;font-family:var(--head);font-size:19px;font-weight:800;margin-bottom:2px}
+  .about span{color:var(--soft);font-size:15px}
+  .links{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px}
+  .links a{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;padding:18px 20px;border-radius:20px;
+    background:var(--glass);border:1px solid var(--line);font-weight:800;font-size:17px;transition:background .15s,transform .15s}
+  .links a:hover{background:var(--glass-2);transform:translateY(-2px)}
+  .links small{display:block;font-weight:600;font-size:14px;color:var(--mute);margin-top:2px}
+  .links a::after{content:"\2192";font-size:20px;color:var(--sun)}
+  footer{text-align:center;color:var(--mute);font-size:14px;margin-top:64px}
+
+  @media (max-width:560px){
+    .wrap{padding-top:44px}
+    .game{padding:22px 20px}
+    .top img{width:80px;height:80px;border-radius:20px}
+    .game h2{font-size:26px}
+    .btn{flex:1;justify-content:center}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
@@ -49,26 +103,56 @@
         <i style="background:#ff3b4f"></i><i style="background:#fff"></i><i style="background:#ffd23f"></i>
       </div>
       <h1>Kaselca Apps</h1>
-      <p class="tag">Fun, free games for Android</p>
+      <p class="tag">Fun, <b>free</b> games for Android</p>
     </header>
 
-    <section class="card">
-      <img src="data:image/png;base64,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" alt="Twistyard app icon">
-      <div>
-        <h2>Twistyard</h2>
-        <p>13 twisty puzzles in one app. Scan your real cube with the camera, get every turn to solve it, and learn step by step.</p>
-        <div class="chips"><span>Camera scan</span><span>Solver</span><span>Lessons</span><span>Daily challenges</span></div>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.twistyard.app">&#9654; Get it on Google Play</a>
-      </div>
-    </section>
+    <main>
+      <h3 class="label">Our games</h3>
+      <div class="games">
+        <article class="game twisty">
+          <div class="top">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAYAAACLz2ctAAASM0lEQVR42u2de6xlVX3HP7+1H+d1752Xw4yggjNYktKiWKsgqLSC1keQGBuaqkljG2MqxGcafMS2SjXG2CZtWkWtj0ZpI9amNbFpI2NbHlEYqpWHCkoj4DggMNx77r3n7Mdav/6x97nzuA/GcvY5l5nfJ9lwZ+7krH3W/uz1Omd9t+w89TTFMKaEsyowTEDDBDQME9AwAQ3DBDRMQMMwAQ0T0DBMQMMENAwT0DABDcMENExAwzABDRPQMExAwwQ0DBPQMAENwwQ0njTEm+VERGTlZ1XbKdp0PW+WOo43Q4WEEPBFgfeeEAKomoRN1LVzOOdwUUQUxzjnpl7P8bTFK7KMsigq8dZoDY3xEcoSf0Qdx0lCkqa4KJqaiPG05CvynHw4RFUREZNuwsMcgCLPKYuCJE1JWq2TZxKSDQZkg4G1dptEyDzLGC4vnxwCZoMBRZ6beJtMRF+WDJaWJt4VxxN8l+SDAWVRrCuf1Me40fo47ruyiRNRCPqL11kjtaHrjMm9JxsMaHe7J5aAozHfei2f1E1xhuIbuAETERJYGYCvR+QqSQZZ9X/5BcV9PKlbKUQReH8c/zgo5GUjDQFJVLuoa7aERZaRttsTaQ0nImAIgTzL1pRvJF6uytOjmC0SEcZ8xx/0nkfV0xO3rlRRBAuLEDs483Sh0xY0jO+a5yXce39gaUmZnRVC2OAfL+XQSdDT5sbYCmr1WsMSeXCxviPiVc2yiFBkWbVME8erJH3SCTh6QxrCKgEdMFRlVxTxzu42XpJ26IigY+4Bfx48Xxr0+cJggVhklYTOwUJfufC5MX/6tpQXnB3RjRnreWQK37s38NFPZPzTN0pmZtaQUIBhSXjR6YRXnYWe0jv89+OiDMjdjxBddwdy3wJ0Vkuo9Qy5Hcc03QZGvdm5P2myAFUlHw7X7HYLVU5xEV/cuouLWh0CjF0+gC0u4pWtHltdxL9nyyRH3AiRg8VF5eUXxvzrZ7s86wxH6g+PR8d1xAKnneq4/LKEgwcDN9/m6XTkcAPjBJYL/GvOIrz516GbHB4HjPWKC5y+lXDe03F3PoQ8vAxxtKrR0BCI4hhxzc5TXdOtX/AeXaO/cUCO8s7eVs6KUh4M/nHHaP9fclUOBs8b27O8rNVlSQNRLUbpYcus8NfvbdOKlOIxXbnrdUzH6LXKJUWXlI+9u82Zz3QMh6MJT9U16p7thNeeDf0MsrKhFgFYyGAmxb/hnErINdo5VcUXBU2vVTS+DOPLctXbEyADnhYlXJR2eUwDKdLYm3V1mR64tNVb6YKdg+Vl5aLnx+x9lsMvQZIcbnTG1fqNXiuOwGcws0O47Ddj8qHiRidXeMILngbtGLzWZjY18HKwlKN7t6N7tkHm1xxrBu8bn4g0KqCqHvUR25ECelXmxNGux3yNj0UBj7LdOSLqcaYAAXbvENQxmfOQaly/e6es/sWWdvXLSS2Rxg6dbVfCyxq9VwiNn0LjLeBak48je4OJLrhWvq1upf3krvnItTWXYqbxeewGZarqmsOnJ5WAmw1ZR4iJn4d9EHRyCmiYgIZhAhomoGGYgIYJaJiAhmECGiagYZiAhgloGCagYQIahglomICGYQIaJqBhnEACTvpLwfo4JyLTPg82S4Wc4AIqVVzGz3zJz4MnRmh6+4sHUoR7yoICxVFtu3Ux3PljX+0cn4CBqiAKt98dQI5wQEHunz8cy9H4lRcYFMjBPiRuOvtRpiog8Kh6vjTss805Qi1JaOAoUDoiLGjg2kGfRCrhQ4BeT/jWdzxfu74keoqQ5+BD9Ts/pmP0WnkO8Tbh9ts9/3x9SXdG8KG2shPjbroPOdCHXgplqERs4igDbGnjbr4feWAB0mhqreHUElI90BPHF5b77I0SXt+erSXUsTZECqTiWAiBq/qP8AOfMyvu8CZ4hTgR3np1xs5ThPPOi6tNy+OMaKhfK0rhR/cE3njVkOWh0ukcEc8RO+jnRJ+8lfLK82BnF4oG+gWpypJvP0D05TuqfJgpxvTKzlNPa7T0weLiupubR9skh6q8vNXh0tYMO1wlh4yxvu8uC64d9Pl+Ld+xl9U5yDJoJfCm1yW84sUxvfZ4kzEyDzfu91zzDzkPPar0umtkw9Tdom7vEi7Zg+7ZXv2djukuqBMY3G0HcDf+pPpztPHrd3q9RuM5pirgSBAB+nUUVcr4N6oXKDFCV2Td+A/nqr26y4uKxJDEMraGQYAyKKGAVldIE9ZPx3IChYehr8ZmMubmz9ddezc5rvy5pgWcekr+KD9lTtwvHCR5vHRqqTfKngmhknDLViHo+HullghODo8J1z8Rrbrj2SbGZQoSHS5nE8yCN81zQjwCG+T3PbHXVo4n7E8VfJDqUQZu/Nc+qKLHEzqo4NBG4mEUJYTNsxS0OQSUCLREi359gcasoUuRuFu95gZNWxRFZFlGNmgmsDtptel0OvgNIlKl7oWXCvBNBGQJtNNq4uuDCQji0KKPJLOkp74M197B2KJJRy3gwo8pHvlvxKXVVHSN13fOsfDYIZ5xxhlccP759Ga6+DCeGbmIkBcFt96ynx98/y56s3NVBt+qiNxKisUMnrMLfm13lV84jntRqeYbj2Rww/1wsA+z7cksOW5eAcWhxSLprgvpPud9xHO/BNLAgNdnZAeuZ+m7HyRkjyJR6ygJnROWlpa44soreN97r2L37l0NLJEqhw49xievuYarr/4wuGglKWtlRSBA6uDjvwVvOkdopTD2NSngp/Pwgf9UPnc7zLSmK2E8VfnKJZIdz2X2wk8jEqPFQlOF0Tr9NbjOThb+6/dAfS2YEkURC48d4oorr+Sv/vIvGQzmmZ8/hKqMbSRQiaYkScx7rnov3U6Ht7/j3cxt2bLSHYtAlsPnXwO/fa6gffCDo7x5wjPx0dLmaV3428uELChfugPmOtPrjqe4DOPAD5h70edJdr0QzR8DlzR3IiFH2rtYvO39DO/5LJJuRQjkRcHuXadwy7duYG5ujjzPiaKomVMICgRarQ4X/cYl3Hrrfrq9HkKgP4RXnQlfu1woBtVEuKlPBn2oqvqBeTj388qyX385sOllGDe11i8McTNnEG//FbRcalY+AIkhZKS7X1z9jBJFjnywzAUvfCG7dj2VLMsak2/U1fugtFpdLrnkpfiywLl65h/g1XuFUcPb5MfSkQMt4enb4HlPhUHRbCDr5hOwXvOQqHV4XWpiE+72ioCjy9zrdWn+sh/RFSr0ujOrfjeTTPYbQirQS5gqU/4+oE6pzKPL9d5P9iYQ8GF1mX7C1SFTKHOTCbg5mMZz69Z7YtTEzwMT0DiJMQENE9AwAQ3DBDRMQMMwAQ0T0DBMQMMENAwT0DABDcMENExAwzABDRPQME4EATfHc+tP1i+kKif1F1Kl2hnDZPcDqvpVZRZlwaS3BxR5vvrvJhyZIdpMAtzmF1ADEqX4xfvw/XurjULa8L4MLcGllA/vh5ADDu89cdrm1ltuY37+EHEcbZjkNS5CKLjhpptwLjqcFSOw7z5d2bTUaPkKRPDoInznoSoiMJxUAgJIhPoBy3d9AqIWuLSSRP34j1AgrafgF+5h+OO/R+IeaEBV6XY7fP+uO/mbT3yKmZltqCplWTZ2bN26k6985avsu/6bdGdm8T7gA/Ra8JUfwE3/C8kslH58Ca1HHmWo82e68JFvKz9dmG5G5XTzAetojvYzL6d7zh/h2k8Zf1dYh0wWj/4Pi/uvopy/G4k7K9EcItWPIXg+8uEP8Za3vJlWq9vIiEu15Lrr/pE/fOvbWF5eJorjlbpxAlkJu3vw6VfCy/ZKYwO0LIePfUv54I1VKKeezAGViEPzBaLZM0hPvRjX3gnBV2aMiXL+h+QHvoH6YZWSdUw40SgoaKnf57zzz+Pii1/KTK9HCGEM56GIOLJhxk0338z11+8jTVvESbyqXpxUSaoa4BV74fmnQVrnxzzxs6he/1AGX78XvvuzKheGx7nlT3wB6+4YP0TLQUPv0iFJr46BC+vOSp1z9BcX0bJobNgxOzeLqq5bJ6NE3sWsuflZFFcb0o9nT/AJn5Ba3YK+yvBrtRud+GwU+6aqeO+Z6fVwDVX4qIzHnSAAc62xdgKryvCbJKFy0ySkVskYTc7FjjOSNgQ0hKlXRePTQxPw2MFPCblv5rZXoBNXkVNh/cT+I8PSm6L3ODHEztUhlY9po1d9tleFsKue7AIKsJSje7YTXnAabBk9H0HGI55UTyByN90H/Qw6ySoJhSrAPFPlpWmXl6QdOjLetP4SuDUf8vVsCYBUZM3HRQyGVYTu71+ecMFzYhKnlSRjmIU4Bz9fhK/tK9l3c0m3Kzg3XQmnvAwDDD3+0rMIr/1laDe0IOUEOdAn+uStyA8fPkrC6lklSoTwZ7M7uKw1g6OR59QgAjfkA9618DAPqyc54pEUzsFwAGee7vi7j7V53rkNPb1IqrvhU9fmvP0jGS7aOIfzxJ0FO4GlnPCi0/FvO79qnXxopgsOCjMpHBoS//E+ZH5YdccKEbCggatndvCW7hYO1KlVTYz/A7DbRfxbtswfzD9IOmpl67XISODGL3Y559yI4mGtWqcGhiMiEO12fOijQz7wFxlbtgqln46A0/skJCh0EsKrz4JhWf05cpWY4z5iB4s57OwSLt5blSeCAMuqnB2nvK49w4PBE9XjkqiBIwEeDJ6L0g4vSTssacBRve3lJeV3XpWsyJckEEUQj/uI63Hmw4F3/G7CM5/hGGTNzbg3p4BSPQ1IT+mhO3vVk4Gajuh0AkVA92yDJKqfxQElytlxi179CK+mr8PoMQznJq2VBWapW6YLnu3Q0ExO+7HVLx5mtjl+9SxHninOnUwCHlUT0y9zMtmox0i4zgx40gmpUTRVA+wLqSczk/jmjQlobGpMQMMENExAwzABDRPQMExAwwQ0DBPQMAENwwQ0TEDDMAENE9AwTEDDBDQME3Bc6CYpcxpfDtUTXUBxbuNtmZNmjTKn8a30tcqM3OTl26hMEWl0R1zjAo4Cf9Z861KnIZQ6ORGFakecP7rMRQ0TC2jU+j8La0RezS9W+zQmdi8GmO9X53FsG6Gqjcs3kRbQrbXrRYEkQg4uInfXG8XLhhUICrHD3XZgZVN6ANriuKXI+GkoaCE0mdMa6pZvUQP/kQ+I643pquBi+Oq+EikOn25TlCW4Dtxzj2f/9wLdjqyZ2xRFUeP52Y0KqKobvwkRouvugH4Os63qSoQGDoAdXWT/AdyNP4FulYygQEq1V/fji/PMOKFTR2aM+/BAgnCKi7hmsMAdZUa3LssH6PWEfTeXfObanHh3FZkRQjNHPCNoJLzrzzMWFpU4Xj0WFCCKm09uaTwZQUTIBgOKPF8tohMYlOierfg3PBvdu30lsWAs3fLodZYL3M33EX35zioAKZKjatwBSxq4tNXj7b1tPCOKx35nKvBQ8HxmeYHPDRZoH5M9I3JYkPe8OeWK16ds395MSsTtPwq8/+MZ//LNkrkZwYfVDUccx7S63Se/gAAaAoOlpXXaYKnGZU7QPdvQudb4wolqA+VgH3mgDkM+Rr4jJexrYKtEnJOkdHEEdDzJpAg5yl1lzsFQMiNuzdmn1GOxpb5yxjMcZ5/lSEfhQfJEe6NqD/ChPuz/nqe/pMzOCGsl0akq7V6POI4bD22fiIAiQp5l5MPh2t2xq2t+6KsmQGS86wOJgzSqytCNZ6YFMFRFx75AIbRFSOvueMMZcgTDDPKsgUsj0O0IcQxrZWWqKnGS0O52J/LEgInEs6kqSZriy5JQlqtbt9E4rR03MyPW4xvV+1rCGRFkzCei9XE8kxzvIU2gncrh6KpxNMX1fa5hfflcFNFqtyci38QEHNHudBgsLxO8X7slVJ36yuhIlGmjk47RrZdd2p3ORJOKJrv0KUKn2z3q8QTGZpBdkSii0+2uvWx2wghYS9judklarZU3b0xPvNGYr9PtIlE08esxtYjeVrtNHMcUeU5ZlitL8SJiZjQs3aie4zgmTlOipH5azRQag3iaFRHFMVEc473HlyW+LKu7csop9ScqIoKLIlwUEccxURRB/ZCeaRFvhrvRRVFVGa2WCdikgM6tJMPqqP6nPATaJA+qOXrVTZx9S2xSdT1t7EobJqBhAhqGCWiYgIZhAhomoGGYgIYJaBgmoGECGoYJaJiAhmECGiagYZiAhgloGCagYQIahglomICGYQIaTx7+Dwf0/8X4yuf/AAAAAElFTkSuQmCC" alt="Twistyard app icon" width="96" height="96">
+            <div><div class="kind">Puzzle</div><h2>Twistyard</h2></div>
+          </div>
+          <p>13 twisty puzzles in one app. Scan your real cube with the camera, get every turn to solve it, and learn step by step.</p>
+          <div class="chips"><span>Camera scan</span><span>Solver</span><span>Lessons</span><span>Daily challenges</span></div>
+          <div class="foot">
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.twistyard.app"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5v17a1 1 0 0 0 1.5.86l14.2-8.5a1 1 0 0 0 0-1.72L6.5 2.64A1 1 0 0 0 5 3.5z"/></svg> Get it on Google Play</a>
+            <span class="free">Free</span>
+          </div>
+        </article>
 
-    <section class="sec">
-      <h3>Legal</h3>
-      <div class="links">
-        <a href="https://rhayveambait.github.io/kaselca_apps_privacy/">Privacy Policy<small>How we handle your data</small></a>
-        <a href="https://rhayveambait.github.io/kaselca_apps_terms/">Terms of Service<small>The rules for using our apps</small></a>
+        <article class="game quill">
+          <div class="top">
+            <img src="data:image/webp;base64,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" alt="Quillblade app icon" width="96" height="96">
+            <div><div class="kind">Action adventure</div><h2>Quillblade</h2></div>
+          </div>
+          <p>Draw a line to strike and loop it to seal the blots. Guide a tiny ink knight through a notebook full of hand-drawn pages, bosses and an Endless Page.</p>
+          <div class="chips"><span>Draw to fight</span><span>Boss battles</span><span>Upgrades every run</span><span>Endless mode</span></div>
+          <div class="foot">
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.quillblade.game"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5v17a1 1 0 0 0 1.5.86l14.2-8.5a1 1 0 0 0 0-1.72L6.5 2.64A1 1 0 0 0 5 3.5z"/></svg> Get it on Google Play</a>
+            <span class="free">Free</span>
+          </div>
+        </article>
       </div>
-    </section>
+
+      <section class="sec">
+        <h3 class="label">About us</h3>
+        <div class="about">
+          <div><b>Made with care</b><span>Small, polished games you can pick up any time.</span></div>
+          <div><b>Free to play</b><span>Every game is free to download, with optional extras.</span></div>
+          <div><b>From the Philippines</b><span>An independent studio building for Android.</span></div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <h3 class="label">Legal</h3>
+        <div class="links">
+          <a href="https://rhayveambait.github.io/kaselca_apps_privacy/"><span>Privacy Policy<small>How we handle your data</small></span></a>
+          <a href="https://rhayveambait.github.io/kaselca_apps_terms/"><span>Terms of Service<small>The rules for using our apps</small></span></a>
+        </div>
+      </section>
+    </main>
 
     <footer>&copy; 2026 Kaselca Apps &middot; Philippines</footer>
   </div>
